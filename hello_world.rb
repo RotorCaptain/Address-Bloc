@@ -4,6 +4,7 @@ def hello_world
     end
 end
 
+hello_world
 
 
 
