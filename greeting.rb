@@ -1,5 +1,9 @@
 def greeting
-    ARGV.each do |name|
-        put "Hi, #{name}!"
-    end
+  ARGV[0]
+  ARGV[1..-1].each do |name|
+    puts "#{ARGV[0]} #{name}!"
+  end
 end
+
+greeting
+
