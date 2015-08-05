@@ -17,4 +17,13 @@ class AddressBook
       end
       @entries.insert(index, Entry.new(name, phone, email))
   end
+  
+  def view_entry_n(index)
+    if index >= 0 && index < entries.size
+      return entries[index]
+    else
+      system "clear"
+      puts "The number you selected is out of range"
+    end
+  end
 end
