@@ -23,13 +23,11 @@ class AddressBook
   end
   
   def remove_entry(entry)
-    @entries = [ ]
-    entries.pop
+        @entries.delete(entry)
   end
   
   def decimate_all_entries
-    @entries = [ ]
-    @address_book.delete_all
+    @address_book.entries.clear
     puts "All entry's deleted"
   end
   
